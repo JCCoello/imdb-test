@@ -32,7 +32,7 @@ test.describe("IMDb Search Functionality", () => {
     expect(firstResultText.toLowerCase()).toContain(searchTerm.toLowerCase());
 
     // Optional step (add later if needed): Click the first result
-    // await searchResultsPage.clickFirstResult();
-    // await expect(page).toHaveTitle(/The Matrix/); // Example assertion for movie page
+    await searchResultsPage.clickFirstResult();
+    await expect(page).toHaveTitle(/The Matrix/); // Example assertion for movie page
   });
 });
